@@ -85,6 +85,8 @@
         .cat-util-croissance { background-color: #fce4ec; border-left: 5px solid #e91e63; }
         .cat-util-sante      { background-color: #fff3e0; border-left: 5px solid #ff9800; }
         .cat-util-eau        { background-color: #e8eaf6; border-left: 5px solid #3f51b5; }
+        .cat-nettoyage       { background-color: #e0f2f1; border-left: 5px solid #009688; }
+        .cat-amis            { background-color: #f1f8e9; border-left: 5px solid #8bc34a; }
         .category h3 { margin-top: 0; display: flex; align-items: center; gap: 10px; }
         ul { line-height: 1.6; margin-bottom: 0; padding-left: 0; }
         li strong { color: #222; }
@@ -142,6 +144,7 @@
         <button class="tab-links" onclick="openTab(event,'Sauvage')" id="defaultOpen">🌿 Sauvage</button>
         <button class="tab-links" onclick="openTab(event,'Magasin')">🛒 Magasin</button>
         <button class="tab-links" onclick="openTab(event,'Utile')">⚕️ Utile (Santé)</button>
+        <button class="tab-links" onclick="openTab(event,'Divers')">🧰 Divers</button>
     </div>
 
     <!-- ===== SAUVAGE ===== -->
@@ -205,7 +208,7 @@
                     </div>
                     <div class="photo-panel">
                         <img src="aliments_photos/Bourse-à-pasteur.jpg" alt="Bourse à pasteur">
-                        <img src="aliments_photos/Chénopode_blanc.jpg" alt="Chénopode blanc">
+                        <img src="aliments_photos/Chénopode_blanc.png" alt="Chénopode blanc">
                     </div>
                 </li>
             </ul>
@@ -307,7 +310,7 @@
                         <button class="photo-toggle" onclick="togglePhotos(this)">📷 Photo</button>
                     </div>
                     <div class="photo-panel">
-                        <img src="aliments_photos/Blanc_de_Meudon.jpg" alt="Blanc de Meudon">
+                        <img src="aliments_photos/Blanc_de_Meudon.png" alt="Blanc de Meudon">
                     </div>
                 </li>
                 <li>
@@ -326,7 +329,7 @@
                         <button class="photo-toggle" onclick="togglePhotos(this)">📷 Photo</button>
                     </div>
                     <div class="photo-panel">
-                        <img src="aliments_photos/Gammares-séchés.jpg" alt="Gammares séchés">
+                        <img src="aliments_photos/Gammares_séchés.jpg" alt="Gammares séchés">
                     </div>
                 </li>
                 <li>
@@ -377,7 +380,7 @@
                     </div>
                     <div class="photo-panel">
                         <img src="aliments_photos/Os_de_seiche.jpg" alt="Os de seiche">
-                        <img src="aliments_photos/Blanc_de_Meudon.jpg" alt="Blanc de Meudon">
+                        <img src="aliments_photos/Blanc_de_Meudon.png" alt="Blanc de Meudon">
                     </div>
                 </li>
                 <li>
@@ -411,7 +414,7 @@
                         <button class="photo-toggle" onclick="togglePhotos(this)">📷 Photo</button>
                     </div>
                     <div class="photo-panel">
-                        <img src="aliments_photos/Gammares-séchés.jpg" alt="Gammares séchés">
+                        <img src="aliments_photos/Gammares_séchés.jpg" alt="Gammares séchés">
                     </div>
                 </li>
                 <li>
@@ -459,6 +462,28 @@
             <ul>
                 <li><div class="food-header"><span class="food-text"><strong>Légumes/Fruits gorgés d'eau (Concombre, Courgette, Pastèque) :</strong> <span class="dosage">[Dosage : Illimité]</span> Important en période chaude.</span></div></li>
                 <li><div class="food-header"><span class="food-text"><strong>Soin du pied (Aloe Vera pur) :</strong> <span class="dosage">[Dosage : 1 cube de 1cm]</span> Pulpe pure sans la peau.</span></div></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===== DIVERS ===== -->
+    <div id="Divers" class="tab-content">
+        <h2>Entretien et astuces du terrarium</h2>
+
+        <div class="category cat-nettoyage">
+            <h3>🧽 Nettoyage</h3>
+            <ul>
+                <li><div class="food-header"><span class="food-text"><strong>La Mousse :</strong> Le bain d'eau tiède <span class="dosage">(30-35°C)</span> pendant 10 min.</span></div></li>
+                <li><div class="food-header"><span class="food-text"><strong>Les Feuilles :</strong> Hop, dans une assiette au micro-ondes pendant <span class="dosage">30-45 secondes</span>.</span></div></li>
+                <li><div class="food-header"><span class="food-text"><strong>Les Écorces :</strong> Sur la grille du four à <span class="dosage">100°C</span> pendant 25 minutes.</span></div></li>
+            </ul>
+        </div>
+
+        <div class="category cat-amis">
+            <h3>🤝 Amis</h3>
+            <ul>
+                <li><div class="food-header"><span class="food-text"><strong>Collemboles.</strong></span></div></li>
+                <li><div class="food-header"><span class="food-text"><strong>Isopode :</strong> Les Armadillidium, qui se roulent en boule parfaite quand on les touche. Ce sont des détritivores stricts et pacifiques, parfaits pour cohabiter avec les escargots.</span></div></li>
             </ul>
         </div>
     </div>
